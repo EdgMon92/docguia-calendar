@@ -131,38 +131,6 @@ http://localhost:3000
 
 ---
 
-## 📁 Estructura del Proyecto
-```
-docguia-calendar/
-├── src/
-│   ├── components/
-│   │   ├── ui/              # Componentes base (button, dialog, etc)
-│   │   ├── layout/          # Layout y navegación
-│   │   ├── calendar/        # Componentes del calendario
-│   │   ├── voice/           # Componentes de reconocimiento de voz
-│   │   └── forms/           # Formularios
-│   ├── hooks/               # Custom React hooks
-│   ├── services/            # Lógica de negocio
-│   │   ├── appointments/    # Gestión de citas
-│   │   ├── voice/           # Procesamiento de voz
-│   │   └── storage/         # LocalStorage adapter
-│   ├── store/               # Zustand stores
-│   ├── types/               # TypeScript types
-│   ├── lib/                 # Utilidades
-│   ├── config/              # Configuración
-│   ├── pages/               # Páginas
-│   ├── App.tsx              # Componente raíz
-│   └── main.tsx             # Entry point
-├── public/                  # Assets estáticos
-├── index.html
-├── package.json
-├── vite.config.ts
-├── tailwind.config.js
-└── tsconfig.json
-```
-
----
-
 ## 🧪 Comandos Disponibles
 ```bash
 # Desarrollo
