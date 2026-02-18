@@ -9,14 +9,14 @@ interface CalendarGridProps {
   weekDays: Date[]
   appointments: Appointment[]
   timeSlots: number[]
-  onAppointmentClick?: (appointment: Appointment) => void // ⭐ Agregar
+  onAppointmentClick?: (appointment: Appointment) => void 
 }
 
 export function CalendarGrid({ 
   weekDays, 
   appointments, 
   timeSlots,
-  onAppointmentClick // ⭐ Agregar
+  onAppointmentClick 
 }: CalendarGridProps) {
   const getAppointmentsForDay = (day: Date) => {
     return appointments.filter(apt => {

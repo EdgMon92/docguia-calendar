@@ -2,7 +2,7 @@ import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Filter, Plus, Help
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/cn'
 import { ViewMode } from '@/types/calendar'
-import { storageAdapter } from '@/services/storage/localStorageAdapter' // ⭐ Agregar
+import { storageAdapter } from '@/services/storage/localStorageAdapter' 
 
 interface CalendarHeaderProps {
   currentDate: Date
@@ -30,7 +30,7 @@ export function CalendarHeader({
   onCreateAppointment,
 }: CalendarHeaderProps) {
   
-  // ⭐ Función para limpiar todas las citas (solo para desarrollo)
+  // Función para limpiar todas las citas
   const handleClearAll = () => {
     if (window.confirm('¿Estás seguro de eliminar todas las citas?')) {
       storageAdapter.clearAll()
@@ -105,7 +105,7 @@ export function CalendarHeader({
 
       {/* Acciones */}
       <div className="flex items-center gap-3">
-        {/* ⭐ BOTÓN TEMPORAL PARA LIMPIAR (SOLO DESARROLLO) */}
+        {/* BOTÓN PARA LIMPIAR */}
         <Button 
           variant="ghost" 
           size="sm"

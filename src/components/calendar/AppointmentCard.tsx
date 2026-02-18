@@ -1,7 +1,7 @@
 import { Appointment } from '@/types/appointment'
 import { format } from 'date-fns'
 import { cn } from '@/lib/cn'
-import { MoreVertical, Stethoscope } from 'lucide-react' // ⭐ Agregar Stethoscope
+import { MoreVertical, Stethoscope } from 'lucide-react' 
 
 interface AppointmentCardProps {
   appointment: Appointment
@@ -35,7 +35,7 @@ export function AppointmentCard({ appointment, onClick }: AppointmentCardProps) 
             {format(appointment.endTime, 'h:mm a')}
           </p>
           
-          {/* ⭐ NUEVO: Doctor */}
+          {/* Doctor */}
           {appointment.doctor && (
             <div className="flex items-center gap-1 mt-1">
               <Stethoscope className="w-3 h-3 text-gray-500" />
